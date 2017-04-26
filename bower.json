@@ -1,11 +1,12 @@
 {
   "name": "xtrak",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Extract spliced elements from array.",
   "main": "xtrak.deploy.js",
   "support": "xtrak.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -24,9 +25,9 @@
     "tests"
   ],
   "dependencies": {
-    "condev": "^0.3.0",
+    "condev": "^0.5.0",
     "doubt": "^0.25.0",
-    "exempt": "^0.7.0",
+    "exempt": "^0.8.0",
     "falzy": "^0.19.0"
   }
 }
