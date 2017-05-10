@@ -34,6 +34,9 @@
 			"file": "xtrak.js",
 			"module": "xtrak",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/xtrak.git",
 			"test": "xtrak-test.js",
