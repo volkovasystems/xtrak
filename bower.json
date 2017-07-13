@@ -1,6 +1,6 @@
 {
   "name": "xtrak",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Extract spliced elements from array.",
   "main": "xtrak.deploy.js",
   "support": "xtrak.support.js",
@@ -26,9 +26,9 @@
     "tests"
   ],
   "dependencies": {
-    "condev": "^0.16.0",
-    "doubt": "^0.27.0",
-    "exempt": "^0.15.0",
+    "condev": "^0.17.0",
+    "doubt": "^0.30.0",
+    "exempt": "^0.16.0",
     "falzy": "^0.20.0"
   }
 }
