@@ -1,49 +1,52 @@
 {
-  "name": "xtrak",
-  "version": "0.6.0",
-  "description": "Extract spliced elements from array.",
-  "main": "xtrak.js",
-  "support": "xtrak.support.js",
-  "deploy": "xtrak.deploy.js",
-  "browser": "xtrak.deploy.js",
-  "scripts": {
-    "build": "babel xtrak.js --out-file xtrak.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha xtrak-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/xtrak.git"
-  },
-  "keywords": [
-    "extract",
-    "splice",
-    "element",
-    "array",
-    "xtrak"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/xtrak/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/xtrak#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "condev": "^0.17.0",
-    "doubt": "^0.30.0",
-    "exempt": "^0.16.0",
-    "falzy": "^0.20.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.2.0"
-  }
+	"name": "xtrak",
+	"version": "0.7.0",
+	"description": "Extract spliced elements from array.",
+	"main": "xtrak.js",
+	"support": "xtrak.support.js",
+	"deploy": "xtrak.deploy.js",
+	"browser": "xtrak.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"build": "babel xtrak.js --out-file xtrak.support.js --source-maps && webpack --progress --display-modules",
+		"pretest": "npm run clear && npm run build",
+		"test": "node xtrak-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/xtrak.git"
+	},
+	"keywords": [
+		"extract",
+		"splice",
+		"element",
+		"array",
+		"xtrak"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/xtrak/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/xtrak#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"condev": "^0.20.0",
+		"doubt": "^0.34.0",
+		"exempt": "^0.17.0",
+		"falzy": "^0.23.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.5.2"
+	}
 }
